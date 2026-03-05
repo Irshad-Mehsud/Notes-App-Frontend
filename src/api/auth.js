@@ -12,12 +12,13 @@ export const uploadProfileImage = async (file) => {
   return await apiService.post("/uploads/", file);
 };
 
+
 export const loginUser = (credentials) => {
-  return apiService.post("/auth/login", credentials);
+  return apiService.post("/api/auth/login", credentials);
 };
 
 export const registerUser = (userData) => {
-  return apiService.post("/auth/register", userData);
+  return apiService.post("/api/auth/register", userData);
 };
 
 export const logoutUser = () => {
