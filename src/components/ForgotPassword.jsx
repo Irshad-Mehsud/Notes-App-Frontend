@@ -17,7 +17,7 @@ export default function ForgotPassword() {
       return;
     }
     try {
-      await apiService.post("auth/forgot-password", { email });
+      await apiService.post("/api/auth/forgot-password", { email });
       navigate("/verify-otp", { state: { email } });
     } catch (err) {
       setError("Failed to send email. Try again.");
