@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create instance
 
-const API_BASE_URL = "https://notes-app-backend-khaki.vercel.app/api";
+const API_BASE_URL = "https://notes-app-backend-khaki.vercel.app";
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
