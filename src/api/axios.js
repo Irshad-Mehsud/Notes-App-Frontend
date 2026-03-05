@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create instance
 const axiosInstance = axios.create({
-  baseURL: "https://notes-app-backend-khaki.vercel.app/", // your backend API base URL
+  baseURL: "https://notes-app-backend-khaki.vercel.app", // your backend API base URL
   withCredentials: true, // required for HTTP-only cookies
   headers: {
     "Content-Type": "application/json",
