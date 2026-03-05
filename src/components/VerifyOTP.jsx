@@ -46,7 +46,7 @@ export default function VerifyOTP() {
      console.log("OTP Type:", typeof otp); // Log OTP type
 
     try {
-      await apiService.post("/auth/verify-otp", { email, otp });
+      await apiService.post("/api/auth/verify-otp", { email, otp });
       // Move to password reset, passing email forward
       navigate("/create-new-password", { state: { email, otp } });
     } catch (err) {

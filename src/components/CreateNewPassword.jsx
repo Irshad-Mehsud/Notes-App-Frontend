@@ -37,7 +37,7 @@ export default function CreateNewPassword() {
     }
     setIsLoading(true);
     try {
-      await apiService.post("http://localhost:5000/api/auth/reset-password", {
+      await apiService.post("https://notes-app-backend-khaki.vercel.app/api/auth/reset-password", {
         email,
         otp,
         newPassword,
