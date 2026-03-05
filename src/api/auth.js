@@ -7,11 +7,32 @@ Auth APIs
 ====================================
 */
 
+// export const uploadProfileImage = async (file) => {
+//   // Accept FormData directly and do not set Content-Type header manually
+//   return await apiService.post("/uploads/", file);
+// };
+
+
+// export const loginUser = (credentials) => {
+//   return apiService.post("/api/auth/login", credentials);
+// };
+
+// export const registerUser = (userData) => {
+//   return apiService.post("/api/auth/register", userData);
+// };
+
+// export const logoutUser = () => {
+//   return apiService.post("/auth/logout");
+// };
+
+// export const getCurrentUser = () => {
+//   return apiService.get("/auth/me");
+// };
+
 export const uploadProfileImage = async (file) => {
   // Accept FormData directly and do not set Content-Type header manually
-  return await apiService.post("/uploads/", file);
+  return await apiService.post("/api/uploads/", file);
 };
-
 
 export const loginUser = (credentials) => {
   return apiService.post("/api/auth/login", credentials);
@@ -22,9 +43,9 @@ export const registerUser = (userData) => {
 };
 
 export const logoutUser = () => {
-  return apiService.post("/auth/logout");
+  return apiService.post("/api/auth/logout");
 };
 
 export const getCurrentUser = () => {
-  return apiService.get("/auth/me");
+  return apiService.get("/api/auth/me");
 };
